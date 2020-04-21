@@ -1,8 +1,10 @@
+[TOC]
+
 # 关于
 
 这是一个基于 [LeanCloud](https://leancloud.com) 搭建的没有评论、点赞、阅读量干扰的说话空间。
 
-*使用者应当在符合法律规定且不伤害他人的框架内表达，并为个人言论负责。*
+**使用者应当在符合法律规定且不伤害他人的框架内表达，并为个人言论负责。*
 
 ## 对抗
 
@@ -24,6 +26,7 @@
 - [蹲坑沉思](https://dashlin.github.io/mythought/)
 - [不吐不快](http://blog.zackzhou.com/thread/)
 - [狂人日记](https://bb.elizen.me/)
+- 木木木木木的「[b言b语](https://immmmm.com/bb/)」
 - etc…
 
 # 使用
@@ -37,7 +40,8 @@
 - `index.html` 为基础版本，适用于单人使用；
 - `lovers.html` 为多人版本，可用于情侣使用；
   - 还需要在 LeanCloud 后台创建一个 `Number` 类型，名为「type」的列；
-  - 简单更改下文发送脚本，同样新增 `type` 字段，并设置为 0-n 的数字；
+  - 简单更改下文发送脚本，在 HTTP 请求体内新增 `type` 字段，并设置为 0-n 的数字，代表不同人员；
+  - 目前只设置了 type 为 0 和 1 的颜色，多余的需要手动设置；
 
 ## 发送脚本
 
@@ -48,4 +52,15 @@
 | iOS     | 快捷指令（可直接使用）                                       | [点击安装](https://www.icloud.com/shortcuts/3cfcbc36a6a24e0a8721bfeef8dfc6cf) |
 | Android | [Tasker](https://play.google.com/store/apps/details?id=net.dinglisch.android.taskerm&hl=en_US) | 无，欢迎评论补充                                             |
 
-也可以查阅 LeanCloud [文档](https://console.leancloud.app/docs/rest_api.html#hash1094926014)使用任意能发送 HTTP 请求的工具发送数据；
+- 可以查阅 LeanCloud [文档](https://console.leancloud.app/docs/rest_api.html#hash1094926014)使用任意能发送 HTTP 请求的工具发送数据；
+- 可以利用 IFTTT 的 [Webhook](https://ifttt.com/maker_webhooks) ，在脚本中增加「同步到 Twitter 的功能」；
+- 可以利用 [Telegram bot](https://core.telegram.org/bots/api) ，在脚本中增加「同步到 Channel 功能」
+
+
+
+# 功能
+
+- [x]  链接解析
+- [ ] RSS
+
+暂时不计划加入「标签」、「定位」、「上传图片」等功能，因为这些功能的引入会使脚本的发送流程变得复杂，于「保卫表达、鼓励表达」的初衷无益。
