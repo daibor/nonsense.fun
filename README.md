@@ -1,4 +1,4 @@
-[TOC]
+
 
 # 关于
 
@@ -48,9 +48,9 @@
 | 平台    | 支持自定义 HTTP 的应用                                       | 模板地址                                                     |
 | ------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | Windows | [Quicker](https://www.getquicker.net/)（可直接使用）         | [点击安装](https://getquicker.net/sharedaction?code=eeb80278-5f53-4b0d-d333-08d7e0dd26a9) |
-| macOS   | 没有使用经验，欢迎评论补充                                   | 无，欢迎评论补充                                             |
+| macOS   | 没有使用经验，欢迎评论补充                                   | 无，欢迎补充                                                 |
 | iOS     | 快捷指令（可直接使用）                                       | [点击安装](https://www.icloud.com/shortcuts/3cfcbc36a6a24e0a8721bfeef8dfc6cf) |
-| Android | [Tasker](https://play.google.com/store/apps/details?id=net.dinglisch.android.taskerm&hl=en_US) | 无，欢迎评论补充                                             |
+| Android | [Tasker](https://play.google.com/store/apps/details?id=net.dinglisch.android.taskerm&hl=en_US) | 无，欢迎补充                                                 |
 
 - 可以查阅 LeanCloud [文档](https://console.leancloud.app/docs/rest_api.html#hash1094926014)使用任意能发送 HTTP 请求的工具发送数据；
 - 可以利用 IFTTT 的 [Webhook](https://ifttt.com/maker_webhooks) ，在脚本中增加「同步到 Twitter 的功能」；
@@ -62,5 +62,6 @@
 
 - [x]  链接解析
 - [ ] RSS
+- [ ] 标签
 
-暂时不计划加入「标签」、「定位」、「上传图片」等功能，因为这些功能的引入会使脚本的发送流程变得复杂，于「保卫表达、鼓励表达」的初衷无益。
+暂时不计划加入定位、上传图片等功能，因为这些功能的引入会使脚本的发送流程变得复杂，于「保卫表达、鼓励表达」的初衷无益。
