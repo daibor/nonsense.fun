@@ -31,7 +31,7 @@
             </p>
         </aside>
         <p class="tip">现在总共 b 了 {{count}} 条</p>
-        <section class="item" v-for="item in contents" v-cloak>
+        <section class="item" v-bind:class="'type-'+item.attributes.type" v-for="item in contents" v-cloak>
             <p v-html='item.attributes.content'></p>
             <time v-bind:datetime="item.attributes.time">{{item.attributes.time}}</time>
         </section>
@@ -56,6 +56,7 @@
         serverURLs: '国际版可删除该行，否则必须在后台绑定域名并填写在此'
     });
 
+    //设定存储数据的 className
     var query = new AV.Query('content');
 
     var app = new Vue({
@@ -72,6 +73,7 @@
         }
     })
 
+    //识别 URL 链接
     function urlToLink(str) {
         var re = /(http|ftp|https):\/\/[\w-]+(.[\w-]+)+([\w-.,@?^=%&:/~+#]*[\w-\@?^=%&/~+#])?/g;;
 
@@ -81,6 +83,7 @@
         return str;
     }
 
+    //获取数据
     function getData(page = 0) {
         query.descending('createdAt').skip(page * 20).limit(20).find().then(function(results) {
             if (results.length == 0) {
@@ -101,6 +104,7 @@
 
     getData(0);
 
+    //计数
     query.count().then(function(count) {
         app.count = count;
     }, function(error) {});
@@ -133,6 +137,12 @@
         body .load-btn:hover:active {
             background: #1DA1F2;
             color: #fff;
+        }
+        .type-0 {
+            border-top-color: #046e75 !important;
+        }
+        .type-1 {
+            border-top-color: #d04f8e !important;
         }
     }
     
@@ -225,6 +235,14 @@
     .load-btn:hover:active {
         background: #666;
         color: #fff;
+    }
+    
+    .type-0 {
+        border-top-color: #2196F3;
+    }
+    
+    .type-1 {
+        border-top-color: #FF4081;
     }
 </style>
 
