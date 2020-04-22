@@ -30,6 +30,12 @@
 - 木木木木木的「[b言b语](https://immmmm.com/bb/)」
 - etc…
 
+
+
+## 感谢
+
+[Jimlee2002](https://github.com/jimlee2002) 为 Android 平台制作的 Tasker [脚本](https://github.com/jimlee2002/nonsense.fun_tasker)
+
 # 使用
 
 你需要在 LeanCloud 后台创建一个名为 `content` 的 Class ，并在其中创建一个名为 `content` 的列。将 `AppID` 、`AppKey` 编辑入 `index.html` 注释提示处。然后将该文件上传至例如 `github.io` 之类 Web 服务器。
@@ -51,7 +57,7 @@
 | Windows | [Quicker](https://www.getquicker.net/)（可直接使用）         | [点击安装](https://getquicker.net/sharedaction?code=eeb80278-5f53-4b0d-d333-08d7e0dd26a9) |
 | macOS   | 没有使用经验，欢迎评论补充                                   | 无，欢迎补充                                                 |
 | iOS     | 快捷指令（可直接使用）                                       | [点击安装](https://www.icloud.com/shortcuts/3cfcbc36a6a24e0a8721bfeef8dfc6cf) |
-| Android | [Tasker](https://play.google.com/store/apps/details?id=net.dinglisch.android.taskerm&hl=en_US) | 无，欢迎补充                                                 |
+| Android | [Tasker](https://play.google.com/store/apps/details?id=net.dinglisch.android.taskerm&hl=en_US)（可直接使用） | [教程与安装](https://github.com/jimlee2002/nonsense.fun_tasker) |
 
 - 可以查阅 LeanCloud [文档](https://console.leancloud.app/docs/rest_api.html#hash1094926014)使用任意能发送 HTTP 请求的工具发送数据；
 - 可以利用 IFTTT 的 [Webhook](https://ifttt.com/maker_webhooks) ，在脚本中增加「同步到 Twitter 的功能」；
