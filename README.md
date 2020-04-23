@@ -22,7 +22,7 @@
 - 本人的「[b言b语](https://bb.daibor.com)」
 - Xu Lu 的「[废话胶囊](https://bb.lynnislu.com/)」
 - Vio 的「[生活碎片](https://vio1331.github.io/)」
-- [熊某人的BBtime](https://wangyr55.github.io/)
+- [熊某人的BBtime](https://wangyurui.cn/)
 - [蹲坑沉思](https://dashlin.github.io/mythought/)
 - [不吐不快](http://blog.zackzhou.com/thread/)
 - [狂人日记](https://bb.elizen.me/)
