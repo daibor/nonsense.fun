@@ -28,6 +28,7 @@
 - [狂人日记](https://bb.elizen.me/)
 - [力言堂](http://weibo.litalk.net/)
 - 木木木木木的「[b言b语](https://immmmm.com/bb/)」
+- [x言x语](https://chiperman.github.io/JustBB/)
 - etc…
 
 
