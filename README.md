@@ -35,7 +35,11 @@
 
 ## 感谢
 
-[Jimlee2002](https://github.com/jimlee2002) 为 Android 平台制作的 Tasker [脚本](https://github.com/jimlee2002/nonsense.fun_tasker)
+[Jimlee2002](https://github.com/jimlee2002) 为 Android 平台制作的 Tasker [脚本](https://github.com/jimlee2002/nonsense.fun_tasker)；
+
+[SoSo](https://sspai.com/u/0y3pn1ih/updates) 为 Android 平台提供的 Termux 解决方案（见[少数派教程](https://sspai.com/post/60024)评论区）；
+
+[SKYue](https://www.skyue.com/)为 Mac OS 平台提供的 Python + 命令行[解决方案](https://www.skyue.com/blog/20042614.html)；
 
 # 使用
 
