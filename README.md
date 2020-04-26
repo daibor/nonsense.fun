@@ -22,12 +22,13 @@
 - 本人的「[b言b语](https://bb.daibor.com)」
 - Xu Lu 的「[废话胶囊](https://bb.lynnislu.com/)」
 - Vio 的「[生活碎片](https://vio1331.github.io/)」
-- [熊某人的BBtime](https://wangyr55.github.io/)
+- [熊某人的BBtime](https://wangyurui.cn/)
 - [蹲坑沉思](https://dashlin.github.io/mythought/)
 - [不吐不快](http://blog.zackzhou.com/thread/)
 - [狂人日记](https://bb.elizen.me/)
 - [力言堂](http://weibo.litalk.net/)
 - 木木木木木的「[b言b语](https://immmmm.com/bb/)」
+- [x言x语](https://chiperman.github.io/JustBB/)
 - etc…
 
 
@@ -55,7 +56,7 @@
 | 平台    | 支持自定义 HTTP 的应用                                       | 模板地址                                                     |
 | ------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | Windows | [Quicker](https://www.getquicker.net/)（可直接使用）         | [点击安装](https://getquicker.net/sharedaction?code=eeb80278-5f53-4b0d-d333-08d7e0dd26a9) |
-| macOS   | 没有使用经验，欢迎评论补充                                   | [教程与安装](https://www.skyue.com/blog/20042614.html#comment-304) |
+| macOS   | 使用 Python 脚本 + 命令行发布                                   | [教程与安装](https://www.skyue.com/blog/20042614.html) |
 | iOS     | 快捷指令（可直接使用）                                       | [点击安装](https://www.icloud.com/shortcuts/3cfcbc36a6a24e0a8721bfeef8dfc6cf) |
 | Android | [Tasker](https://play.google.com/store/apps/details?id=net.dinglisch.android.taskerm&hl=en_US)（可直接使用） | [教程与安装](https://github.com/jimlee2002/nonsense.fun_tasker) |
 
