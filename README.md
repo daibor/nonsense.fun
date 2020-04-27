@@ -39,7 +39,9 @@
 
 [SoSo](https://sspai.com/u/0y3pn1ih/updates) 为 Android 平台提供的 Termux 解决方案（见[少数派教程](https://sspai.com/post/60024)评论区）；
 
-[SKYue](https://www.skyue.com/)为 Mac OS 平台提供的 Python + 命令行[解决方案](https://www.skyue.com/blog/20042614.html)；
+[SKYue](https://www.skyue.com/) 为 Mac OS 平台提供的 Python + 命令行[解决方案及教程](https://www.skyue.com/blog/20042614.html)；
+
+[xwlearn](https://xwlearn.com/) 为 Mac OS 平台提供的 [uTools](https://www.u.tools/) 快捷命令[解决方案及教程](https://xwlearn.com/howto-graciously-bb-in-mac/)；
 
 # 使用
 
@@ -59,14 +61,14 @@
 
 | 平台    | 支持自定义 HTTP 的应用                                       | 模板地址                                                     |
 | ------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| Windows | [Quicker](https://www.getquicker.net/)（可直接使用）         | [点击安装](https://getquicker.net/sharedaction?code=eeb80278-5f53-4b0d-d333-08d7e0dd26a9) |
-| macOS   | 使用 Python 脚本 + 命令行发布                                   | [教程与安装](https://www.skyue.com/blog/20042614.html) |
-| iOS     | 快捷指令（可直接使用）                                       | [点击安装](https://www.icloud.com/shortcuts/3cfcbc36a6a24e0a8721bfeef8dfc6cf) |
-| Android | [Tasker](https://play.google.com/store/apps/details?id=net.dinglisch.android.taskerm&hl=en_US)（可直接使用） | [教程与安装](https://github.com/jimlee2002/nonsense.fun_tasker) |
+| Windows | [Quicker](https://www.getquicker.net/)                       | [点击安装](https://getquicker.net/sharedaction?code=eeb80278-5f53-4b0d-d333-08d7e0dd26a9) |
+| macOS   | 1. 使用 Python 脚本 + 命令行发布；<br />2. 使用 uTool 快捷命令发布； | [1. 教程与安装](https://www.skyue.com/blog/20042614.html)<br />2. [教程与安装](https://xwlearn.com/howto-graciously-bb-in-mac/) |
+| iOS     | 快捷指令                                                     | [点击安装](https://www.icloud.com/shortcuts/3cfcbc36a6a24e0a8721bfeef8dfc6cf) |
+| Android | [Tasker](https://play.google.com/store/apps/details?id=net.dinglisch.android.taskerm&hl=en_US) | [教程与安装](https://github.com/jimlee2002/nonsense.fun_tasker) |
 
 - 可以查阅 LeanCloud [文档](https://console.leancloud.app/docs/rest_api.html#hash1094926014)使用任意能发送 HTTP 请求的工具发送数据；
-- 可以利用 IFTTT 的 [Webhook](https://ifttt.com/maker_webhooks) ，在脚本中增加「同步到 Twitter 的功能」；
-- 可以利用 [Telegram bot](https://core.telegram.org/bots/api) ，在脚本中增加「同步到 Channel 功能」
+- 可以利用 IFTTT 的 [Webhook](https://ifttt.com/maker_webhooks) ，在脚本中增加「同步到 Twitter/Facebook/Instagram 的功能」；
+- 可以利用 [Telegram bot](https://core.telegram.org/bots/api) ，在脚本中增加「同步到 Channel 功能」；
 
 
 
