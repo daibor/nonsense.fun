@@ -61,7 +61,7 @@
 
 | 平台    | 支持自定义 HTTP 的应用                                       | 模板地址                                                     |
 | ------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| Windows | [Quicker](https://www.getquicker.net/)                       | [点击安装](https://getquicker.net/sharedaction?code=eeb80278-5f53-4b0d-d333-08d7e0dd26a9) |
+| Windows | [Quicker](https://www.getquicker.net/)（可直接使用）         | [点击安装](https://getquicker.net/sharedaction?code=eeb80278-5f53-4b0d-d333-08d7e0dd26a9)<br>[最新基础版本](https://getquicker.net/sharedaction?code=6f13a847-1543-4a88-5a41-08d7fefdcaef)<br>[多人版本](https://getquicker.net/sharedaction?code=b07a57b9-dd67-40fc-5a40-08d7fefdcaef)|
 | macOS   | 1. 使用 Python 脚本 + 命令行发布；<br />2. 使用 uTool 快捷命令发布； | [1. 教程与安装](https://www.skyue.com/blog/20042614.html)<br />2. [教程与安装](https://xwlearn.com/howto-graciously-bb-in-mac/) |
 | iOS     | 快捷指令                                                     | [点击安装](https://www.icloud.com/shortcuts/3cfcbc36a6a24e0a8721bfeef8dfc6cf) |
 | Android | [Tasker](https://play.google.com/store/apps/details?id=net.dinglisch.android.taskerm&hl=en_US) | [教程与安装](https://github.com/jimlee2002/nonsense.fun_tasker) |
