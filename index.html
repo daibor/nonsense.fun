@@ -19,92 +19,6 @@
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 </head>
-
-<body>
-    <header id="header">
-        <h1>b言b语</h1>
-    </header>
-    <main id="app">
-        <aside>
-            <p id="describe">
-                可以在这里简单介绍你自己
-            </p>
-        </aside>
-        <p class="tip">现在总共 b 了 {{count}} 条</p>
-        <section class="item" v-for="item in contents" v-cloak>
-            <p v-html='item.attributes.content'></p>
-            <time v-bind:datetime="item.attributes.time">{{item.attributes.time}}</time>
-        </section>
-        <div class="load-ctn">
-            <button class="load-btn" v-on:click="loadMore" v-if="contents" v-cloak>再翻翻</button>
-            <p class="tip" v-else>别急，加载呢</p>
-        </div>
-    </main>
-    <footer>
-        <p class="center-text">Copyright © 2020 daibor,All Rights Reserved</p>
-    </footer>
-</body>
-<script src="https://cdn.bootcss.com/vue/2.6.11/vue.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/leancloud-storage@4.5.3/dist/av-min.js"></script>
-<script type="text/javascript">
-    var {
-        Query
-    } = AV;
-    AV.init({
-        appId: "aaa", //你的 leancloud 应用 id （设置-应用keys-AppID）
-        appKey: "aaa", //你的 leancloud 应用 AppKey （设置-应用keys-AppKey）
-        serverURLs: '国际版可删除该行，否则必须在后台绑定域名并填写在此'
-    });
-
-    var query = new AV.Query('content');
-
-    var app = new Vue({
-        el: '#app',
-        data: {
-            page: 0,
-            count: 0,
-            contents: []
-        },
-        methods: {
-            loadMore: function(event) {
-                getData(++this.page);
-            }
-        }
-    })
-
-    function urlToLink(str) {
-        var re = /(http|ftp|https):\/\/[\w-]+(.[\w-]+)+([\w-.,@?^=%&:/~+#]*[\w-\@?^=%&/~+#])?/g;;
-
-        str = str.replace(re, function(website) {
-            return "<a href='" + website + "' target='_blank'> <i class='iconfont icon-lianjie-copy'></i>链接 </a>";
-        });
-        return str;
-    }
-
-    function getData(page = 0) {
-        query.descending('createdAt').skip(page * 20).limit(20).find().then(function(results) {
-            if (results.length == 0) {
-                alert('之前没 b 过了')
-            } else {
-                let resC = results;
-                reqData = false;
-                resC.forEach((i) => {
-                    let dateTmp = new Date(i.createdAt);
-                    i.attributes.time = `${dateTmp.getFullYear()}-${(dateTmp.getMonth() + 1) < 10 ? ('0' + (dateTmp.getMonth()+1)) : dateTmp.getMonth()+1}-${(dateTmp.getDate() + 1) < 10 ? ('0' + dateTmp.getDate()) : dateTmp.getDate()} ${(dateTmp.getHours() + 1) <= 10 ? ('0' + dateTmp.getHours()) : dateTmp.getHours()}:${(dateTmp.getMinutes() + 1) <= 10 ? ('0' + dateTmp.getMinutes()) : dateTmp.getMinutes()}`;
-                    i.attributes.content = "<span>" + urlToLink(i.attributes.content) + "</span>";
-                    app.contents.push(i);
-                })
-            }
-
-        }, function(error) {});
-    }
-
-    getData(0);
-
-    query.count().then(function(count) {
-        app.count = count;
-    }, function(error) {});
-</script>
 <style type="text/css">
     @media (prefers-color-scheme: dark) {
         /* 夜间模式 */
@@ -144,6 +58,10 @@
         font-size: 20px;
     }
     
+    pre {
+        white-space: pre-wrap;
+    }
+
     body,
     button {
         font-family: 'Noto Serif SC', serif;
@@ -227,5 +145,90 @@
         color: #fff;
     }
 </style>
+<body>
+    <header id="header">
+        <h1>b言b语</h1>
+    </header>
+    <main id="app">
+        <aside>
+            <p id="describe">
+                可以在这里简单介绍你自己
+            </p>
+        </aside>
+        <p class="tip">现在总共 b 了 {{count}} 条</p>
+        <section class="item" v-for="item in contents" v-cloak>
+            <p v-html='item.attributes.content'></p>
+            <time v-bind:datetime="item.attributes.time">{{item.attributes.time}}</time>
+        </section>
+        <div class="load-ctn">
+            <button class="load-btn" v-on:click="loadMore" v-if="contents" v-cloak>再翻翻</button>
+            <p class="tip" v-else>别急，加载呢</p>
+        </div>
+    </main>
+    <footer>
+        <p class="center-text">Copyright © 2020 daibor, All Rights Reserved</p>
+    </footer>
+</body>
+<script src="https://cdn.bootcss.com/vue/2.6.11/vue.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/leancloud-storage@4.5.3/dist/av-min.js"></script>
+<script type="text/javascript">
+    var {
+        Query
+    } = AV;
+    AV.init({
+        appId: "aaa", //你的 leancloud 应用 id （设置-应用keys-AppID）
+        appKey: "aaa", //你的 leancloud 应用 AppKey （设置-应用keys-AppKey）
+        serverURLs: '国际版可删除该行，否则必须在后台绑定域名并填写在此'
+    });
+
+    var query = new AV.Query('content');
+
+    var app = new Vue({
+        el: '#app',
+        data: {
+            page: 0,
+            count: 0,
+            contents: []
+        },
+        methods: {
+            loadMore: function(event) {
+                getData(++this.page);
+            }
+        }
+    })
+
+    function urlToLink(str) {
+        var re = /(http|ftp|https):\/\/[\w-]+(.[\w-]+)+([\w-.,@?^=%&:/~+#]*[\w-\@?^=%&/~+#])?/g;;
+
+        str = str.replace(re, function(website) {
+            return "<a href='" + website + "' target='_blank'> <i class='iconfont icon-lianjie-copy'></i>链接 </a>";
+        });
+        return str;
+    }
+
+    function getData(page = 0) {
+        query.descending('createdAt').skip(page * 20).limit(20).find().then(function(results) {
+            if (results.length == 0) {
+                alert('之前没 b 过了')
+            } else {
+                let resC = results;
+                reqData = false;
+                resC.forEach((i) => {
+                    let dateTmp = new Date(i.createdAt);
+                    i.attributes.time = `${dateTmp.getFullYear()}-${(dateTmp.getMonth() + 1) < 10 ? ('0' + (dateTmp.getMonth()+1)) : dateTmp.getMonth()+1}-${(dateTmp.getDate() + 1) < 10 ? ('0' + dateTmp.getDate()) : dateTmp.getDate()} ${(dateTmp.getHours() + 1) <= 10 ? ('0' + dateTmp.getHours()) : dateTmp.getHours()}:${(dateTmp.getMinutes() + 1) <= 10 ? ('0' + dateTmp.getMinutes()) : dateTmp.getMinutes()}`;
+                    i.attributes.content = "<pre>" + urlToLink(i.attributes.content) + "</pre>";
+                    app.contents.push(i);
+                })
+            }
+
+        }, function(error) {});
+    }
+
+    getData(0);
+
+    query.count().then(function(count) {
+        app.count = count;
+    }, function(error) {});
+</script>
 
 </html>
