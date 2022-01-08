@@ -29,6 +29,7 @@
 - [力言堂](http://weibo.litalk.net/)
 - 木木木木木的「[b言b语](https://immmmm.com/bb/)」
 - [x言x语](https://chiperman.github.io/JustBB/)
+- JustSong 的「 [胡言乱语](https://nonsense.justsong.cn/)」
 - etc…
 
 
